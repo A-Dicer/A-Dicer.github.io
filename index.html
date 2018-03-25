@@ -1,67 +1,189 @@
 <!DOCTYPE html>
 <html lang="en-us">
-	<head>
-   		<meta charset="UTF-8">
-   		
-   		<!-- link to css sheet -->
-   		<link rel="stylesheet" type="text/css" href="css/reset.css">
-	    <link rel="stylesheet" type="text/css" href="css/style.css">
-		<title>Andrew A. Dicer</title>
+	
+	<head>		
+		<title>Portfilio</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
 	</head>
-	<body> 
 
-		<!--  main container for header -->
-		<header>
-
-			<div class="holder">
-
-				<!-- name container -->
-				<div class="name">
-					<h1>Andrew Dicer</h1>
-				</div>
-			
-				<!-- links container -->
-				<nav>
-					<a href="index.html">About |</a>
-					<a href="portfolio.html">Portfolio |</a>
-					<a href="contact.html">Contact</a>
-				</nav>
-			</div>
+	<body>
+		<!-- Section for Header -->
+		<header class="col-12 hwrap" >	
+			<!-- site logo -->
+			<div class="text-center" id="logo">
+				<img src="images/logo1.png" id="img-logo">
+				<!-- the links will go here at some point -->
+				<h2 class="">Andrew Dicer</h2>
+				<h5>andrew.dicer@gmail.com | 314-556-7361</h5>
+				
+						
+			</div>	
 		</header>
-
-		<!-- main container for body -->
-		<main>
-			
+	
+		<!-- main container for content -->
+		<main class="col-12">
 			<!-- container for bio -->
-			<section>
-				<h2 id="aboutMe">About Me</h2>
-				<hr>
-				<img id="bioPic" src="images/profile.jpg" alt="Picture of me">
-				
-				<p class="bioText">
-					I was born and raised in the Midwest, but now call Central Florida home. I currently work for The Walt Disney Company within their Consumer Insight department. My goal is to work as a professional software developer.
-				</p>
-				
-				<p class="bioText">
-					My passions include science fiction television and video game speed running. Follow me on Twitch at twitch.tv/sonicscrewdrivr
-				</p>
+			<section class="container-fluid wrapper-top">
+				<div class="row" id="bio">	
+					<div class="col-sm-4">
+						<!-- img for Bio -->
+						<img src="images/bioPic.jpg" alt="" class="img-rounded align-self-center img-bio">
+					</div>
+					<!-- bio paragraph -->
+					<div class="col-sm-8" id="bioWords">
+						<p>
+							I recently relocated from Florida to Chicago and am seeking 
+							a new career opportunity. I worked 
+							for the Walt Disney Company within their Consumer Insight Department, but I have 
+							since started down a new path. 
+						</p>	
+						<p>
+							In the Fall of 2017 I graduated from the University 
+							of Central Florida coding boot camp. I have coded for almost 15 years but felt it 
+							necessary to polish my existing skills and learn some new things along the way to 
+							prepare for a professional career in software and web development. 
+						</p>
+						<p>
+							My Full-stack Web Development program coupled with years of experience at a top 
+							Fortune 500 company makes me an ideal candidate to join your team. 
+							I would love to further discuss how my skill-sets will be of great value. 
+							I look forward to hearing from you!
+						</p>								
+					</div>
+				</div>	
 			</section>
+			
+			<section class="container-fluid wrapper">
+					<div class="row" id="refrences" >
+						<img src="images/ref2.png" class="img-logo1" >	
+						
+						<div class="col-sm-12 refCard">
+							"I have known Andrew for more than 10 years. His skillset is a balanced mix of being 
+							creative and detailed/process oriented. He is hardworking and I always felt like I could 
+							depend on him to get things done both in the right manner and on time." 
+							<h4 style="font-style: normal">- Sam Chen</h4>
+							<H5 style="font-style: normal">Senior Product Manager | Twitch</h5>	
+						</div>
+						
+						<div class="col-sm-12 refCard" style="border: none">
+							"I know Andrew from a web development bootcamp where I was a Teaching Assistant. 
+							I found Andrew to have a great eye for front end design, layout, and development. 
+							His work was consistently superior, and I always looked forward to seeing how he'd 
+							improve on his assignments every week." 
+							<h4 style="font-style: normal">- Ali Zaidi</h4>
+							<h5 style="font-style: normal">Associate Software Engineer | Cubic Corporation</h5>
+						</div>
 
-			<!-- container for sidebar -->
-			<aside>
-				<h3>Connect With Me</h3>
-				<hr>
-				<a href="https://www.linkedin.com/in/andrew-dicer-613632141/" target="new">
-					<img src="images/linkedin-48.png" alt="git">
-				</a>
-				<a href="https://github.com/A-Dicer" target="new">
-				<img src="images/github-48.png" alt="git">
-				<a href="http://stackoverflow.com/users/7875467/a-dicer?tab=profile" target="new">
-				<img src="images/stackoverflow-48.png" alt="git">
-			</aside>	
-		
+					</div>	
+				</section>
+				<section class="container-fluid wrapper bg-color">	
+					<div class="row " id="projects">	
+						<div>
+						<img src="images/pro.png" class="img-logo1" >
+						</div>
+						
+						
+						<div class="col-xs-12 col-sm-4 "> 
+							<div class="card img-rounded">
+									
+									<hr>
+									<a href="https://morning-cove-58284.herokuapp.com/"  target="new">
+										<img class="card-img-top" src="images/po.png" alt="Card image cap">
+									</a>
+								<div class="card-body" style="padding: 10px">
+									<p class="card-text">Tracks and displays times for speedrunning. Used as an overlay while streaming.</p>
+									<hr>
+									<p class="card-text" style="font-size: 22px; color: rgb(2, 92, 113)">
+										<i class="fab fa-js-square " ></i> /
+										<i class="fab fa-node-js"></i> / 
+										<i class="fab fa-react"></i> / 
+										<i class="fas fa-database"></i>
+									</p>
+									
+								</div>
+								 
+							</div>
+						</div>	
+						<div class="col-xs-12 col-sm-4 "> 
+							<div class="card img-rounded">
+									
+									<hr>
+									<a href="https://quiet-citadel-27287.herokuapp.com/" target="new">
+										<img class="card-img-top" src="images/kk.png" alt="Card image cap">
+									</a>
+								<div class="card-body" style="padding: 10px">
+									<p class="card-text">User storing and sharing of code snippets. Able to search and bookmark code for later use.</p>
+									<hr>
+									<p class="card-text" style="font-size: 22px; color: rgb(2, 92, 113)">
+										<i class="fab fa-js-square"></i> / 
+										<i class="fab fa-node-js"></i> / 
+										 <i class="fas fa-database"></i>
+									</p>
+								</div>
+							</div>
+						</div>	
+						<div class="col-xs-12 col-sm-4 "> 
+							<div class="card img-rounded">
+									
+									<hr>
+									<a href="https://a-dicer.github.io/TriviaGame/" target="new">
+										<img class="card-img-top" src="images/sftg.png" alt="Card image cap">
+									</a>
+								<div class="card-body" style="padding: 10px">
+									<p class="card-text">A Trivia Game to test your knowledge.  Good music and a 50's style. Fun for up to 2 players.</p>
+									<hr>
+									<p class="card-text" style="font-size: 22px; color: rgb(2, 92, 113)">
+										<i class="fab fa-js-square"></i>
+									</p>
+								</div>
+							</div>
+						</div>
+						<!-- <div class="col-xs-12 col-sm-3 "> 
+							<div class="card img-rounded">
+									<h3 class="card-title">Kalimba TAS</h3>
+								<img class="card-img-top" src="images/sftg.png" alt="Card image cap">
+								<div class="card-body" style="padding: 10px">
+									<p class="card-text">Helps you TAS the game Kalimba.  Runs in the Terminal or DOS. Must have node.js to use. </p>
+									<p class="card-text">JavaScript | node.js</p>
+									<a href="https://a-dicer.github.io/TriviaGame/" class="btn btn-primary" target="new">Try it</a>
+								</div>
+							</div>
+						</div> -->
+					</div>	
+				</section>
+				<!-- section for contact info and form -->
+				<section class="col-sm-12 col-md-12  mrg-top mrg-bot wrapper-bottom">
+						
+						<div class="row">
+					
+							<div class="col-xs-12 col-sm-3"></div>
+							<div class="col-xs-12 col-sm-6">
+								<h3>Contact Info</h3>
+									<hr>
+									<i class="fas fa-envelope-square"></i> Email: andrew.dicer@gmail.com
+									<br>
+									<i class="fas fa-phone-square"></i> Phone: (314)556-7361
+									<br>
+									<i class="fab fa-linkedin"></i> linkedIn: <a href="https://www.linkedin.com/in/andrew-dicer/" target="new" style="color: #fff">linkedin.com/in/andrew-dicer</a>
+									<br>
+									<i class="fab fa-github-square"></i> GitHub: <a href="https://github.com/A-Dicer" target="new" style="color: #fff">github.com/A-Dicer</a>
+							</div>
+							<div class="col-xs-12 col-sm-3"></div>
+							
+
+						</div>
+				</section>
+
 		</main>
-		<!-- container for footer -->
-		<footer><h6>© Copyright 2017 Andrew Dicer</h6></footer>
+
+		<!-- Section for footer -->		
+		<footer class="col-xs-12 panel-footer fwrap text-center">© Andrew Dicer 2017</footer>	
 	</body>
 </html>
